@@ -52,9 +52,9 @@ module("luci.controller.sshplus", package.seeall)
 function index()
 	if not nixio.fs.access("/etc/init.d/sshplus") then return end
 	-- FIX: Changed menu path to /admin/peditxos/sshplus and set order to 10
-	entry({"admin", "peditxos"}, firstchild(), "PeDitXOS Tools", 40).dependent=true
-	entry({"admin", "peditxos", "sshplus"}, cbi("sshplus_manager"), "SSHPlus", 10).dependent = true
-	entry({"admin", "peditxos", "sshplus_api"}, call("api_handler")).leaf = true
+	entry({"admin", "services"}, firstchild(), "Services", 40).dependent=true
+	entry({"admin", "services", "sshplus"}, cbi("sshplus_manager"), "SSHPlus", 10).dependent = true
+	entry({"admin", "services", "sshplus_api"}, call("api_handler")).leaf = true
 end
 function api_handler()
 	local action = luci.http.formvalue("action")
@@ -259,7 +259,7 @@ chmod +x /usr/bin/sshplus_service
 echo "Configuring Passwall/Passwall2 if present..."
 if service passwall2 status > /dev/null 2>&1; then
     uci set passwall2.SshPlus=nodes
-    uci set passwall2.SshPlus.remarks='ssh-plus'
+    uci set passwall2.SshPlus.remarks='SSH Plus'
     uci set passwall2.SshPlus.type='Xray'
     uci set passwall2.SshPlus.protocol='socks'
     uci set passwall2.SshPlus.server='127.0.0.1'
@@ -274,7 +274,7 @@ if service passwall2 status > /dev/null 2>&1; then
     echo "Passwall2 configuration updated successfully."
 elif service passwall status > /dev/null 2>&1; then
     uci set passwall.SshPlus=nodes
-    uci set passwall.SshPlus.remarks='Ssh-Plus'
+    uci set passwall.SshPlus.remarks='SSH Plus'
     uci set passwall.SshPlus.type='Xray'
     uci set passwall.SshPlus.protocol='socks'
     uci set passwall.SshPlus.server='127.0.0.1'
@@ -301,12 +301,7 @@ echo ">>> SSHPlus installation/update complete."
 
 # FIX: Added final ASCII art banner
 cat << "EoL"
-  ______     _____  _   _   _   _____      
- (_____ \   (____ \(_)_  \ \ / /   /   / ___ \     
-  _____) )___ _   \ \ _| |_  \ \/ /   | |   | | ___ 
- |  ____/ _  ) |   | | |  _)  )  (    | |   | |/___)
- | |   ( (/ /| |__/ /| | |__ / /\ \   | |___| |___ |
- |_|    \____)_____/ |_|\___)_/  \_\   \_____/(___/ 
-                                                  
-                                       SSHPlus by PeDitX
+
+Installation was Successful
+
 EoL

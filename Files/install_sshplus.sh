@@ -52,9 +52,9 @@ module("luci.controller.sshplus", package.seeall)
 function index()
 	if not nixio.fs.access("/etc/init.d/sshplus") then return end
 	-- FIX: Changed menu path to /admin/peditxos/sshplus and set order to 10
-	entry({"admin", "services"}, firstchild(), "Services", 40).dependent=true
-	entry({"admin", "services", "sshplus"}, cbi("sshplus_manager"), "SSHPlus", 10).dependent = true
-	entry({"admin", "services", "sshplus_api"}, call("api_handler")).leaf = true
+	entry({"admin", "peditxos"}, firstchild(), "Panel Tools", 40).dependent=true
+	entry({"admin", "peditxos", "sshplus"}, cbi("sshplus_manager"), "SSH Plus", 10).dependent = true
+	entry({"admin", "peditxos", "sshplus_api"}, call("api_handler")).leaf = true
 end
 function api_handler()
 	local action = luci.http.formvalue("action")

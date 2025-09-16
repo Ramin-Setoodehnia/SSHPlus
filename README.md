@@ -1,9 +1,6 @@
 # SSHPlus Manager for OpenWrt
 [![Visitor Badge](https://img.shields.io/badge/Chat%20on-Telegram-blue.svg)](https://t.me/peditx) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[**English**](README.md) | [**فارسی**](README_fa.md) | [**简体中文**](README-ch.md) | [**Русский**](README_ru.md)
-
-![Banner](https://raw.githubusercontent.com/peditx/luci-theme-peditx/refs/heads/main/luasrc/brand.png)
 
 **The first comprehensive SSH tunneling solution natively integrated with PassWall on OpenWrt systems**
 
@@ -96,21 +93,11 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SshPlus/r
 
 ## 📬 Support & Contact
 **Telegram Channel:**  
-[https://t.me/peditx](https://t.me/peditx)
+[https://t.me/peditx](https://t.me/Ramin-Setoodehnia)
 
 ---
 
 ## 📄 License
-**Copyright © 2025 PeDitX**  
+**Copyright © 2025 Ramin-Setoodehnia**  
 *This project is licensed under the GPL-3.0 License*
 
----
-
-## 🙏 Special Thanks
-- Inspired by [EZpasswall](https://github.com/peditx/EZpasswall)
-- Built for the OpenWrt community
-- Powered by PeDitX
-
-
-
-© PeDitX 2025 | Telegram: [@peditx](https://t.me/peditx)

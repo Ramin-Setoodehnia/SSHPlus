@@ -51,25 +51,6 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SshPlus/r
 
 ```
 
----
-
-## ✨ Key Capabilities
-1. **Secure SSH Tunneling**  
-   Create encrypted SOCKS5 proxies with military-grade AES-256-GCM encryption
-
-2. **PassWall Integration**  
-   Direct integration with popular OpenWrt proxy solutions
-
-3. **Connection Management**  
-   ```
-   sshplus  # Launch management interface
-   ```
-   - Start/Stop tunnels
-   - Edit configurations
-   - Monitor active connections
-
-4. **Auto-Service Creation**  
-   Persistent connections survive reboots via init.d service
 
 ---
 

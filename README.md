@@ -91,9 +91,6 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SshPlus/r
 
 ---
 
-## 📬 Support & Contact
-**Telegram Channel:**  
-[https://t.me/Ramin-Setoodehnia](https://t.me/Ramin-Setoodehnia)
 
 ---
 

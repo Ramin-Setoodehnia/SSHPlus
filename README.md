@@ -68,7 +68,7 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SSHPlus/r
 ## 🔧 Requirements
 - OpenWrt 21.02 or newer
 - 8MB+ Free Storage
-- Active internet connection
+- Active Internet Connection
 
 ---
 

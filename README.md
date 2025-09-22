@@ -92,8 +92,6 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SshPlus/r
 ---
 
 
----
-
 ## 📄 License
 **Copyright © 2025 Ramin-Setoodehnia**  
 *This project is licensed under the GPL-3.0 License*

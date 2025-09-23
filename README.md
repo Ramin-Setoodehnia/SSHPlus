@@ -47,7 +47,7 @@ SSHPlus supports all OpenWrt-compatible CPU architectures, including:
 Run this single command in your OpenWrt terminal :
 
 ```bash
-rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SSHPlus/refs/heads/main/Files/install_sshplus.sh && sh install_sshplus.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Ramin-Setoodehnia/SSHPlus/main/Files/install_sshplus.sh)"
 
 ```
 

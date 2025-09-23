@@ -74,6 +74,6 @@ rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SSHPlus/r
 
 🧾 License
 
-Licensed under Ramin.Setoodehnia License 📢 Telegram Channel: https://t.me/AlfaSoft_IR
+Licensed under Ramin.Setoodehnia License
 
 
